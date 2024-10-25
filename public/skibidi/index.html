@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Dark Mode</title>
+    <link href="assets/css/index.css" rel="stylesheet">
+</head>
+
+<body>
+    <div style="border-radius: 30px; width: 30px; height: 30px; position: absolute; top: 15px; left: 15px;" onclick="document.querySelector('body').style.background = 'white'; document.querySelector('h1').innerHTML = 'Light Mode'">
+        <p style="font-size: 10px; color: white;">Light Mode</p>
+    </div>
+
+    <p style="position: absolute; right: 15px; top: 15px; margin: 0;" onclick="window.location.href = 'http://localhost:443/'">roblox</p>
+    
+    <p style="position: absolute; right: 15px; bottom: 15px; margin: 0;" onclick="window.location.href = 'mc-clients/Selector.html';">minecraft</p>
+
+    <h1>Dark Mode</h1>
+    <form>
+        <input placeholder="Search stuff here">
+    </form>
+    <canvas id="particleCanvas"></canvas>
+
+    <!-- External JS files -->
+    <script src="./assets/uv/uv.bundle.js"></script>
+    <script src="./assets/uv/uv.config.js"></script>
+    <script src="./index.js"></script>
+    <script src="./assets/js/particle.js"></script>
+</body>
+
+</html>

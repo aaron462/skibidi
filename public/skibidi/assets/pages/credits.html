@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirect Example</title>
+    <script>
+        function redirectTo(url) {
+            // Assuming __uv$config.prefix and __uv$config.encodeUrl exist
+            window.location.href = __uv$config.prefix + __uv$config.encodeUrl(url);
+        }
+    </script>
+</head>
+<body>
+    <button onclick="redirectTo('https://example.com')">Redirect to Example</button>
+</body>
+</html>
