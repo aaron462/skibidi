@@ -2,6 +2,7 @@
   "dependencies": {
     "bare-server-node": "github:tomphttp/bare-server-node",
     "express": "^4.21.1",
+    "http-proxy-middleware": "^3.0.3",
     "node-static": "^0.7.11"
   },
   "name": "dark-mode",
