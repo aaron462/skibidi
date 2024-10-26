@@ -4,7 +4,7 @@ import nodeStatic from 'node-static';
 
 
 const bare =  new Server('/bare/', '');
-const serve = new nodeStatic.Server('public/skibidi/');
+const serve = new nodeStatic.Server('public/');
 
 const server = http.createServer();
 
@@ -17,4 +17,4 @@ server.on('upgrade', (req, socket, head) => {
 	if(bare.route_upgrade(req, socket, head))return;
 	socket.end();
 });
-server.listen(process.env.PORT || 23312, () => {console.log("dark mode system is running at http://localhost:8080")});
+server.listen(process.env.PORT || 8080, () => {console.log("dark mode running at http://localhost:8080")});
