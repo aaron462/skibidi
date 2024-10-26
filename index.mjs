@@ -17,4 +17,4 @@ server.on('upgrade', (req, socket, head) => {
 	if(bare.route_upgrade(req, socket, head))return;
 	socket.end();
 });
-server.listen(process.env.PORT || 8080, () => {console.log("dark mode system is running at http://localhost:8080")});
+server.listen(process.env.PORT || 23312, () => {console.log("dark mode system is running at http://localhost:8080")});
